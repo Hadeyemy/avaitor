@@ -7,7 +7,7 @@ function App() {
   const [result, setResult] = useState(null)
 
   const handlePredict = async () => {
-    const response = await fetch('https://aviator-backend-v3b3.onrender.com', {
+    const response = await fetch('https://aviator-backend-v3b3.onrender.com/predict', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
